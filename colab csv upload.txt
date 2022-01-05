@@ -1,0 +1,6 @@
+1. Upload the file to colab
+	from google.colab import files
+	uploaded = files.upload()
+2.Import it to a dataframe
+	import io
+	df = pd.read_csv(io.BytesIO(uploaded['Filename.csv']))
